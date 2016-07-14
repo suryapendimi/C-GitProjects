@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline Editor</title>
+	<meta charset="utf-8" />    
+    <script src="Scripts/angular.js"></script>
+    <link href="/Content/bootstrap.CSS" rel="stylesheet" />
+    <link href="Content/InlineEditorStyle.css" rel="stylesheet" />
+    <script src="Scripts/myScripts/InlineEditor.js"></script>
+    <!-- Include AngularJS from Google's CDN -->
+    
+    
+</head>    <!--
+    <div ng-app ng-controller="InlineEditorController" ng-click="hideTooltip()">
+
+        <div class="tooltip" ng-click="$event.stopPropagation()" ng-show="showtooltip"></div>
+        <input type="text" ng-model="value" />
+    </div>
+    <p ng-click="toggleTooltip($event)">{{ value }}</p>
+    -->
+    <body ng-app="InlineEditorModule">
+
+        <!-- When this element is clicked, hide the tooltip -->
+        <div id="main" ng-controller="InlineEditorController" ng-click="hideTooltip()">
+
+            <!-- This is the tooltip. It is shown only when the showtooltip variable is truthful -->
+            <div class="tooltip" ng-click="$event.stopPropagation()" ng-show="showtooltip">
+
+                <!-- ng-model binds the contents of the text field with the "value" model.
+                     Any changes to the text field will automatically update the value, and
+                     all other bindings on the page that depend on it.  -->
+
+                <input type="text" ng-model="value" />
+            </div>
+
+            <!-- Call a method defined in the InlineEditorController that toggles
+             the showtooltip varaible -->
+            <div ng-click="toggleTooltip($event)" >{{value}} </div>
+
+        </div>
+    </body>
+</html>

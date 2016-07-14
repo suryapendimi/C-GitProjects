@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/myScripts/RegisteringAProviderScript.js"></script>
+</head>
+<body ng-app="RegisteringAProviderModule">
+    <div ng-controller="RegisteringAProviderController">
+        <strong>First name:</strong> {{personManagerInstance.getPersonFirstName()}}<br />
+        <strong>Last name:</strong> {{personManagerInstance.getPersonLastName()}}<br />
+        <strong>Full name:</strong> {{personManagerInstance.getPersonFullName("/")}}<br />
+        <br />
+        <label>Set the first name: <input type="text" ng-model="personInstance.firstName" /></label><br />
+        <label>Set the last name: <input type="text" ng-model="personInstance.lastName" /></label>
+    </div>
+</body>
+</html>

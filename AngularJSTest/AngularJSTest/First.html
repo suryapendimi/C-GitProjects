@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="/Scripts/angular.js"></script>
+    <script src="/Scripts/myScripts/app.js"></script>
+    <style>
+        .redDiv {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            padding: 2px 2px 2px 2px;
+        }
+
+        .yellowDiv {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            padding: 2px 2px 2px 2px;
+        }
+    </style>
+
+</head>
+<body ng-app="module1" ng-init="student=['Amul','Sita','Ram','Laxman','Bharat','Kikeya'];checked=true;">
+    <h1>First Angular application</h1>
+    <div>{{2/2}}</div>
+    Enter two Number : 
+    <input type="text" ng-model="num1"  value="1000"/> * 
+    <input type="text" ng-model="num2" value="500"/>=<span>{{ num1 / num2 }}</span>
+    {{2/2 }}
+    {{"Hello my world"}}
+    {{2222222 + 33333333}}
+    <!--
+    <div ng-app ng-init="greet='Hello World!''; amount=10000; salary=600;myarr=[200,100]; person={Firstname:'steve',LastName:'Jobs'}">
+        {{greet}}<br>
+        {{amount}}<br>
+        {{salary}}<br />
+        {{person.Firstname + " " + person.LastName }}
+
+    </div>
+    -->
+    <input type="text" ng-model="myname" />
+    My Name is {{ myname }} <br />
+    MyName from ng-bind<span ng-bind="myname"></span><br />
+    <div>
+        <ol>
+            <li ng-repeat="name in student">{{name}}</li>
+
+        </ol>
+
+    </div>
+    click me : <input type="checkbox" ng-model="checked" /><br/>
+    <div>
+        New : <input ng-if="checked" type="text" />
+    </div>
+    <div>
+        Readonly:<input ng-readonly="checked" type="text" value="This is readonly" />
+    </div><br/>
+    <div>
+        Disabled:<input ng-disabled="checked" type="text" value="This is disabled" />
+    </div> <br/>
+    <div ng-controller="myController">
+        {{message}}
+        <input type="text" ng-model="message1" />
+        <button ng-click="showmessage(message1)">Show message</button>
+        student Information: {{student.firstName + ' ' + student.lastName }}
+        <div ng-controller="my2Controller">
+            {{message}}
+            <input type="text" ng-model="message1" />
+            <button ng-click="showmessage(message)">Show message</button>
+            student Information: {{student.firstName + ' ' + student.lastName }}
+        </div>
+    </div>
+    <div ng-controller="my3rdController">
+        Enter Message: <input type="text" ng-model="message" /> <br />
+        New Message: {{newMessage}} <br />
+        Old Message: {{oldMessage}}
+    </div>
+    <!--
+    <div ng-class="{redDiv: enter, yellowDiv: leave}" ng-mouseenter="enter=true;leave=false;" ng-mouseleave="leave=true;enter=false">
+        Mouse <span ng-show="enter">Enter</span> <span ng-show="leave">Leave</span>
+    </div>-->
+    <input type="text" ng-class="{redDiv: enter, yellowDiv: leave}" ng-mouseenter="enter=true;leave=false;" ng-mouseleave="leave=true;enter=false" />
+
+    
+</body>
+</html>

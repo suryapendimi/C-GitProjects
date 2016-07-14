@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/myScripts/studentScript.js"></script>
+    <link href="/Content/bootstrap.CSS" rel="stylesheet" />
+</head>
+<body ng-app="studentapp" class="container">
+    <form name="studentForm" novalidate>
+
+        <h1>Student Information Form</h1>
+        <div ng-controller="studentInputCntrl" class="form-group ">           
+            <label for="firstName" class="col-sm-3">First Name</label>                       
+                    
+                    <div class="col-sm-3 control-label">
+                        <input type="text" ng-model="student.firstName" class="form-control" ng-required="true" />
+                        <span ng-show="studentForm.firstName.$touched && studentForm.firstName.$error.required">First name is required.</span><br /><br />
+
+                    </div>                
+                    <Div >
+                        <label for="lastName" class="col-sm-3">Last Name :</label>
+                    </Div>
+                    <Div class="col-sm-3 control-label">
+                        <input type="text" ng-model="student.lastName" class="form-control" ng-required="true"/>
+                    </Div>                
+                    <Div>
+                        <label for="DOB" class="col-sm-3">DOB :</label>
+                    </Div>
+                    <Div class="col-sm-3 control-label">
+                        <input type="date" ng-model="student.DOB" class="form-control" ng-required="true"/>
+                    </Div>               
+                    <Div>
+                        <label for="gender" class="col-sm-3">Gender :</label>
+                    </Div>
+                    <Div class="col-sm-3">
+                        <select id="gender" ng-model="student.gender" class="form-control" ng-required="true">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </Div>                
+                    <Div>
+                        <label for="trainingType" class="col-sm-3">Training Type :</label>
+                    </Div>
+                    <Div >
+                        <label><input value="Online" type="radio" ng-model="student.trainingType" name="training" class="radio"/>Online</label>
+                        <label><input value="On-site" type="radio" ng-model="student.trainingType" name="training" class="radio"/>On-site</label>
+                    </Div>                
+                    <Div class="col-sm-3">
+                        <span><b>Main Subjects</b></span>
+
+                    </Div>
+                    <Div class="checkbox">
+                        <label><input value="ASPNET" type="checkbox" ng-model="student.ASPNET" class="checkbox"/>ASP.NET</label>
+                        <label><input value="JAVA" type="checkbox" ng-model="student.JAVA" class="checkbox"/>JAVA</label>
+                        <label><input value="AngularJS" type="checkbox" ng-model="student.AngularJS" class="checkbox"" />Angular JS</label>
+                    </Div>                
+                    <Div  class="col-sm-3"><input type="submit" value="Submit" class="btn btn-primary"/></Div>
+                    <Div  class="col-sm-3"><input type="reset" value="reset" ng-click="resetForm()" /></Div>                
+        </div>
+        </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/myScripts/CheckBoxSelect.js"></script>
+</head>
+<body ng-app="CheckAllModule">
+    <div style="width: 800px; border: 2px solid gray;">
+        <b>Checking All Items In a check box List</b>
+        <ul ng-controller="checkboxController">
+            <li>
+                Check All Skills
+                <input type="checkbox" ng-model="selectedAll" ng-click="checkAll()" />
+            </li>
+            <li ng-repeat="item in Items">
+                <label>
+                    <b>Badges </b>{{item.Name}}
+                    <input type="checkbox" ng-model="item.Selected" />
+                </label>
+            </li>
+        </ul>
+    </div>
+</body> 
+</html>

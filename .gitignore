@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/AngularJSTest/AngularJSTest/bin
+/AngularJSTest/packages
+*.suo
+/AngularJSTest/.vs/config/applicationhost.config
+/AngularJSTest/AngularJSTest/obj/Debug
