@@ -70,6 +70,7 @@
     <Content Include="02_Events_KeyboardEvents.html" />
     <Content Include="03_Events_ChangeEventsForm.html" />
     <Content Include="1way2WayBinding.html" />
+    <Content Include="ArrayFilters.html" />
     <Content Include="CheckBoxSelect.html" />
     <Content Include="06_ConfigurationRunPhases.html" />
     <Content Include="Content\InlineEditorStyle.css" />
@@ -79,6 +80,16 @@
     <Content Include="Content\switchable-gridStyle.css" />
     <Content Include="ControllerSample.html" />
     <Content Include="07_Dependencies.html" />
+    <Content Include="FormatingFilters.html" />
+    <Content Include="FormReset.html" />
+    <Content Include="Forms_CheckBxInput.html" />
+    <Content Include="Forms_Select.html" />
+    <Content Include="Forms_TxtInputs.html" />
+    <Content Include="Forms_Validation.html" />
+    <Content Include="IfAngular.html" />
+    <Content Include="IncludeJS.html" />
+    <Content Include="IncludeJS_1.html" />
+    <Content Include="IncludeJS_2.html" />
     <Content Include="InlineEditor.html" />
     <Content Include="InstantSearch.html" />
     <Content Include="01_ModuleSample.html" />
@@ -91,6 +102,8 @@
     <Content Include="05_RegisteringAProvider.html" />
     <Content Include="04_RegisteringAService.html" />
     <Content Include="02_RegisteringaValue.html" />
+    <Content Include="RadioButton.html" />
+    <Content Include="Repeater.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -865,9 +878,14 @@
     <Content Include="Scripts\myScripts\01_Events_MouseEventsScript.js" />
     <Content Include="Scripts\myScripts\02_Events_KeyboardEventsScript.js" />
     <Content Include="Scripts\myScripts\03_Events_ChangeEventsFormScript.js" />
+    <Content Include="Scripts\myScripts\ArrayFiltersScript.js" />
     <Content Include="Scripts\myScripts\ConfigurationRunPhasesScript.js" />
     <Content Include="Scripts\myScripts\ControllerSampleScript.js" />
     <Content Include="Scripts\myScripts\DependenciesScript.js" />
+    <Content Include="Scripts\myScripts\FormatingFiltersScript.js" />
+    <Content Include="Scripts\myScripts\FormResetScript.js" />
+    <Content Include="Scripts\myScripts\Forms_SelectScript.js" />
+    <Content Include="Scripts\myScripts\Forms_ValidationScript.js" />
     <Content Include="Scripts\myScripts\InstantSearchScript.js" />
     <Content Include="Scripts\myScripts\ModuleSampleScript.js" />
     <Content Include="Scripts\myScripts\MultipleControllersScript.js" />
@@ -877,7 +895,13 @@
     <Content Include="Scripts\myScripts\RegisteringAProviderScript.js" />
     <Content Include="Scripts\myScripts\RegisteringAServiceScript.js" />
     <Content Include="Scripts\myScripts\RegisteringaValueScipt.js" />
+    <Content Include="Scripts\myScripts\RepeaterScript.js" />
+    <Content Include="Scripts\myScripts\ServerCallHttpScript.js" />
+    <Content Include="Scripts\myScripts\Servercalls_QServiceScript.js" />
+    <Content Include="Scripts\myScripts\Servercalls_ResourceScript.js" />
+    <Content Include="Scripts\myScripts\ShowHideScript.js" />
     <Content Include="Scripts\myScripts\switchable-gridScript.js" />
+    <Content Include="Scripts\myScripts\TrackChangesScript.js" />
     <Content Include="Scripts\version.json" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular.min.js.map" />
@@ -905,8 +929,14 @@
     <Content Include="Scripts\myScripts\CheckBoxSelect.js" />
     <Content Include="Scripts\myScripts\InlineEditor.js" />
     <Content Include="Scripts\myScripts\studentScript.js" />
+    <Content Include="ServerCallHttp.html" />
+    <Content Include="Servercalls_QService.html" />
+    <Content Include="Servercalls_Resource.html" />
+    <Content Include="ShowHide.html" />
     <Content Include="StudentForm.html" />
+    <Content Include="Switch.html" />
     <Content Include="switchable-grid.html" />
+    <Content Include="Forms_TrackChanges.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

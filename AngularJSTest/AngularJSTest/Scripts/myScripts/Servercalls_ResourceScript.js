@@ -1,0 +1,1 @@
+﻿pls. refer to http://www.angularjshub.com/examples/servercalls/resourceservice/
